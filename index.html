@@ -17,46 +17,114 @@
 </header>
 
 <main>
-  <!-- Embedded interactive map from your existing uMap -->
+  <!-- Interactive your embed code -->
   <section id="map">
     <h2>Interactive Map of Reported Cases</h2>
-    <iframe
-      src="YOUR_UMAP_URL_HERE"
-      width="100%" 
-      height="600"
-      frameborder="0"
-      allowfullscreen
-      loading="lazy">
-    </iframe>
+    <div class="map-container">
+      <iframe 
+        width="100%" 
+        height="500px" 
+        frameborder="0" 
+        allowfullscreen 
+        allow="geolocation" 
+        src="//umap.openstreetmap.fr/en/map/untitled-map_1260089?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"
+        loading="lazy">
+      </iframe>
+      <p class="map-link">
+        <a href="//umap.openstreetmap.fr/en/map/untitled-map_1260089?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true" 
+           target="_blank" 
+           rel="noopener">
+          View full screen map ↗
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about">
+    <h2>About Project Sogand</h2>
+    <p>
+      This project was created to honor the memory of <strong>Sogand Pakdel</strong>, a 27-year-old trans woman 
+      who was murdered by her uncle in Kavar, Fars province, in June 2025. Her death represents the ongoing 
+      violence faced by transgender and queer individuals in Iran.
+    </p>
+    <p>
+      Each point on this map represents a documented case of violence against trans and queer Iranians. 
+      Behind every marker is a person who deserved to live freely and safely.
+    </p>
   </section>
 
   <!-- Submission form -->
   <section id="submit">
-    <h2>Contribute a Case / Article / Memory</h2>
+    <h2>Contribute Information</h2>
+    <p>Help us document cases and share resources. All submissions are reviewed before publication.</p>
+    
     <form action="https://formspree.io/f/your-form-id" method="POST">
       <label>
         Your name (optional)
-        <input type="text" name="name">
+        <input type="text" name="name" placeholder="Anonymous submissions are welcome">
       </label>
+
       <label>
         Email for follow-up (optional)
-        <input type="email" name="email">
+        <input type="email" name="email" placeholder="your@email.com">
       </label>
+
       <label>
-        Link or description<span class="req">*</span>
-        <textarea name="message" required></textarea>
+        Type of submission
+        <select name="submission_type">
+          <option value="new_case">New case/incident</option>
+          <option value="news_article">News article or report</option>
+          <option value="correction">Data correction</option>
+          <option value="memory">Personal memory/tribute</option>
+          <option value="resource">Resource or support info</option>
+        </select>
       </label>
-      <button type="submit">Send</button>
+
+      <label>
+        Details, links, or description <span class="req">*</span>
+        <textarea name="message" required placeholder="Please provide as much detail as possible, including sources and dates..."></textarea>
+      </label>
+
+      <button type="submit">Submit</button>
     </form>
+
+    <div class="privacy-note">
+      <p><strong>Privacy & Safety:</strong> Your email is never displayed publicly. We verify all information before publication and respect victim privacy.</p>
+    </div>
+  </section>
+
+  <!-- Resources section -->
+  <section id="resources">
+    <h2>Support Resources</h2>
+    <div class="resources-grid">
+      <div class="resource-card">
+        <h3>6Rang Iranian LGBTQI Organization</h3>
+        <p>Supporting LGBTQI+ rights in Iran</p>
+        <a href="https://6rang.org/" target="_blank" rel="noopener">Visit website →</a>
+      </div>
+      <div class="resource-card">
+        <h3>Hengaw Organization</h3>
+        <p>Human rights organization documenting violations</p>
+        <a href="https://hengaw.net/" target="_blank" rel="noopener">Visit website →</a>
+      </div>
+      <div class="resource-card">
+        <h3>Amnesty International</h3>
+        <p>Reports on LGBTQI+ rights in Iran</p>
+        <a href="https://www.amnesty.org/" target="_blank" rel="noopener">Visit website →</a>
+      </div>
+    </div>
   </section>
 </main>
 
 <footer>
   <nav>
     <a href="#top">Back to top</a> |
-    <a href="https://github.com/yourusername/iran-transfemicide/issues" target="_blank">Report data error</a>
+    <a href="#about">About</a> |
+    <a href="#submit">Contribute</a> |
+    <a href="https://github.com/yourusername/iran-transfemicide" target="_blank" rel="noopener">Data repository</a>
   </nav>
-  <p>&copy; 2025 Project Sogand. Built with love and GitHub Pages.</p>
+  <p>&copy; 2025 Project Sogand. Built to remember and honor trans lives. Hosted on GitHub Pages.</p>
 </footer>
 
 </body>
