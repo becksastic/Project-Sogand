@@ -17,53 +17,44 @@
 </header>
 
 <main>
-  <!-- 1.  Embedded interactive map -->
+  <!-- Embedded interactive map from your existing uMap -->
   <section id="map">
     <h2>Interactive Map of Reported Cases</h2>
     <iframe
-      src="https://umap.openstreetmap.fr/en/map/YOUR-MAP-ID-HERE?scaleControl=true&miniMap=true"
+      src="YOUR_UMAP_URL_HERE"
+      width="100%" 
+      height="600"
       frameborder="0"
       allowfullscreen
       loading="lazy">
     </iframe>
   </section>
 
-  <!-- 2.  Submission form -->
+  <!-- Submission form -->
   <section id="submit">
     <h2>Contribute a Case / Article / Memory</h2>
-
-    <!-- Simple static form handled by Formspree; replace ACTION URL with your own -->
     <form action="https://formspree.io/f/your-form-id" method="POST">
       <label>
         Your name (optional)
         <input type="text" name="name">
       </label>
-
       <label>
         Email for follow-up (optional)
         <input type="email" name="email">
       </label>
-
       <label>
         Link or description<span class="req">*</span>
         <textarea name="message" required></textarea>
       </label>
-
       <button type="submit">Send</button>
     </form>
-
-    <p class="privacy-note">
-      Submissions are reviewed before publication. 
-      Your address is never displayed or shared.
-    </p>
   </section>
 </main>
 
 <footer>
   <nav>
     <a href="#top">Back to top</a> |
-    <a href="https://github.com/your-username/iran-transfemicide/issues"
-       target="_blank" rel="noopener">Report a data error</a>
+    <a href="https://github.com/yourusername/iran-transfemicide/issues" target="_blank">Report data error</a>
   </nav>
   <p>&copy; 2025 Project Sogand. Built with love and GitHub Pages.</p>
 </footer>
