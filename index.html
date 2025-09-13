@@ -18,17 +18,11 @@
       background: #232532; padding: 22px 0 14px 0; border-bottom: 1px solid #292a32;
     }
     header h1 { margin: 0; font-size: 2.05em; letter-spacing: 0.4px; }
-    .top-actions { margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
-    .chip {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: #1e1f2a; border: 1px solid #3a3d4d; color: #9fd7ff;
-      padding: 7px 10px; border-radius: 999px; font-weight: 600; font-size: 0.92em; text-decoration: none;
-    }
-    .chip:hover { border-color: #4cc9f0; text-decoration: none; }
     .memorial-photo { display: flex; align-items: flex-start; gap: 13px; margin-top: 14px; }
     .memorial-photo img {
       border-radius: 12px; width: 75px; height: 75px; object-fit: cover;
-      border: 1.5px solid #3e4050; box-shadow: 0 4px 18px rgba(0,0,0,.28); background: #171519;
+      border: 1.5px solid #3e4050; box-shadow: 0 4px 18px rgba(0,0,0,.28);
+      background: #171519;
     }
     .photo-caption { font-size: 0.98em; color: #d792b7; margin: 2px 0 0 0; }
     .tagline { color: #adb2be; margin: 8px 0 0 0; }
@@ -68,7 +62,6 @@
     .fullscreen-link { color: #4cc9f0; margin-top: 0.5em; display: inline-block; }
     .fullscreen-link:hover { text-decoration: underline; }
     .country-tip { font-size: 0.98em; color: #adb2be; margin-bottom: 6px; }
-    .credits-list { margin: 6px 0 0 20px; }
     footer {
       font-size: 0.95em; padding: 30px 10px 40px 10px; color: #adb2be;
       background: #232532; text-align: center; border-top: 1px solid #292a32;
@@ -86,11 +79,6 @@
   <header id="top">
     <div class="container">
       <h1>Project Sogand</h1>
-      <div class="top-actions">
-        <a class="chip" href="https://github.com/becksastic/Project-Sogand" target="_blank" rel="noopener" aria-label="View project on GitHub">GitHub</a>
-        <a class="chip" href="#contribute" aria-label="Contribute information">Contribute</a>
-        <a class="chip" href="#founder" aria-label="Learn about the founder">Founder</a>
-      </div>
       <div class="memorial-photo">
         <img src="sogand.jpeg" alt="Sogand Pakdel - In loving memory" loading="lazy">
         <p class="photo-caption">
@@ -109,7 +97,7 @@
       <section id="map" aria-labelledby="map-title">
         <h2 id="map-title">Interactive Map of Reported Cases</h2>
         <p class="country-tip">
-          View shows most of Iran for context; use +/− to explore regions, or open full screen to scroll and search.
+          View shows most of Iran for context; use +/− to zoom, or open full screen to scroll and search.
         </p>
         <div class="map-container" role="region" aria-label="Project Sogand map">
           <iframe
@@ -132,29 +120,19 @@
       <section id="about" aria-labelledby="about-title">
         <h2 id="about-title">About Project Sogand</h2>
         <p>
-          This project was created to honor the memory of <strong>Sogand Pakdel</strong>, a 27-year-old trans woman who was murdered by her uncle in Kavar, Fars province, in June 2025; her death represents the ongoing violence faced by transgender and queer individuals in Iran.
+          This project was created to honor the memory of <strong>Sogand Pakdel</strong>, a 27-year-old trans woman who was murdered by her uncle in Kavar, Fars province, in June 2025. Her death represents the ongoing violence faced by transgender and queer individuals in Iran.
         </p>
         <p>
-          Each point on this map represents a documented case of a transfemicide or a murder of our trans and queer siblings; we document these cases to honor their memory and shed light on systematic violence.
+          Each point on this map represents a documented case of a transfemicide or a murder of our trans and queer siblings. Behind every marker is a person who deserved to live freely and safely. We document these cases to honor their memory and shed light on the systematic violence faced by LGBTQI+ individuals in Iran.
         </p>
         <p>
-          This is an ongoing project; we continuously research and verify cases to ensure accuracy while respecting the privacy and dignity of victims and their families.
-        </p>
-      </section>
-
-      <section id="founder" aria-labelledby="founder-title">
-        <h2 id="founder-title">Founder</h2>
-        <p>
-          Project Sogand was founded by <a href="https://beccasanaeikia.weebly.com" target="_blank" rel="noopener">Rebecca (“Becca”) Sanaeikia</a>, a social philosopher working at the intersection of bioethics, data practices, and trans studies.
-        </p>
-        <p class="muted">
-          The project invites collaboration from researchers, community advocates, and technologists committed to ethical documentation and safety-centered data practices.
+          This is an ongoing project. We continuously research and verify cases to ensure accuracy while respecting the privacy and dignity of victims and their families.
         </p>
       </section>
 
       <section id="contribute" aria-labelledby="contribute-title">
         <h2 id="contribute-title">Contribute Information</h2>
-        <p>Help us document cases and share resources; all submissions are reviewed before publication.</p>
+        <p>Help us document cases and share resources. All submissions are reviewed before publication.</p>
         <form action="https://formspree.io/f/myzpjdaj" method="POST">
           <label>
             Your name (optional)
@@ -171,7 +149,7 @@
           <input type="submit" value="Send">
         </form>
         <p class="muted" style="margin-top:9px;">
-          <strong>Privacy &amp; Safety:</strong> Your email is never displayed publicly; we verify all information before publication and follow ethical guidelines to respect victim privacy.
+          <strong>Privacy &amp; Safety:</strong> Your email is never displayed publicly. We verify all information before publication and respect victim privacy. We follow ethical guidelines for documenting sensitive cases.
         </p>
       </section>
 
@@ -201,22 +179,10 @@
         </ul>
       </section>
 
-      <section id="credits" aria-labelledby="credits-title">
-        <h2 id="credits-title">Credits &amp; Thanks</h2>
-        <p>
-          With gratitude to <a href="https://datoscontrafeminicidio.net/en/home/" target="_blank" rel="noopener">Data Against Feminicide</a> for building an international community of practice and co-designing tools that support ethical documentation of gender-related killings.
-        </p>
-        <ul class="credits-list">
-          <li>Data Against Feminicide — project overview and community aims</li>
-          <li>D+F Lab @ MIT, ILDA, and Feminicidio Uruguay — leadership and collaboration</li>
-          <li>DUSP MIT page — background on goals and participatory approach</li>
-        </ul>
-      </section>
-
       <section id="data" aria-labelledby="data-title">
         <h2 id="data-title">Data &amp; Methodology</h2>
         <p>
-          Our dataset is compiled through systematic research of news reports, human rights organizations, and verified community sources; each case requires verification from at least two independent sources before inclusion.
+          Our dataset is compiled through systematic research of news reports, human rights organizations, and verified community sources. Each case requires verification from at least two independent sources before inclusion.
         </p>
         <p><strong>Data Sources Include:</strong></p>
         <ul>
@@ -226,28 +192,14 @@
           <li>Community-verified testimonies</li>
         </ul>
         <p class="muted">
-          <strong>Privacy Protection:</strong> We round geographical coordinates to protect surviving family members and respect victim privacy; names are only included when made public through official channels or with family consent.
+          <strong>Privacy Protection:</strong> We round geographical coordinates to protect surviving family members and respect victim privacy. Names are only included when they have been made public through official channels or with family consent.
         </p>
       </section>
-
-      <section id="open-collab" aria-labelledby="open-collab-title">
-        <h2 id="open-collab-title">Open Collaboration</h2>
-        <p>
-          Explore code, open issues, and contribute on GitHub:
-          <a href="https://github.com/becksastic/Project-Sogand" target="_blank" rel="noopener">becksastic/Project-Sogand</a>
-        </p>
-        <p class="muted">
-          For data ethics guidance and research context, see international efforts networking feminist data activists around femicide documentation.
-        </p>
-      </section>
-
     </div>
   </main>
   <footer>
     <div class="container">
-      Project Sogand — In memory and solidarity. •
-      <a href="https://github.com/becksastic/Project-Sogand" target="_blank" rel="noopener">GitHub</a> •
-      <a href="https://beccasanaeikia.weebly.com" target="_blank" rel="noopener">Founder</a>
+      Project Sogand — In memory and solidarity.
     </div>
   </footer>
 </body>
