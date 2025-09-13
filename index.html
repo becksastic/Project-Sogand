@@ -2,176 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Sogand | Remembering Trans Lives in Iran</title>
+  <meta name="viewport" content="width=devic e-width, initial-scale=1.0">
+  <title>Project Sogand – Map of Transfemicide Cases in Iran</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Project Sogand</h1>
+    <div class="tagline">
+      Interactive Map of Reported Cases
+    </div>
+  </header>
 
-<header id="top">
-  <h1>Project Sogand</h1>
-  
-  <!-- Sogand's memorial photo -->
-  <div class="memorial-photo">
-    <img src="sogand.jpeg" alt="Sogand Pakdel - In loving memory" loading="lazy">
-    <p class="photo-caption">
-      Sogand Pakdel (1998-2025)<br>
-      <em>"Forever in our hearts, her courage lights our path"</em>
-    </p>
-  </div>
-  
-  <p class="tagline">
-    A living memorial to <strong>Sogand Pakdel</strong> and all of our queer &amp; trans Iranian siblings.
-    
-  </p>
-</header>
-
-<main>
-  <!-- Interactive map section -->
-  <section id="map">
-    <h2>Interactive Map of Reported Cases</h2>
-    <div class="map-container">
-      <iframe 
-        width="100%" 
-        height="500px" 
-        frameborder="0" 
-        allowfullscreen 
-        allow="geolocation" 
-        src="//umap.openstreetmap.fr/en/map/untitled-map_1260089?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#5/32.0/53.0"
-        loading="lazy">
-      </iframe>
-      <p class="map-link">
-        <a href="//umap.openstreetmap.fr/en/map/untitled-map_1260089?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#5/32.0/53.0" 
-           target="_blank" 
-           rel="noopener">
-          View full screen map ↗
-        </a>
+  <main>
+    <section>
+      <h2>About Project Sogand</h2>
+      <p>
+        This project is dedicated to the memory of <strong>Sogand Pakdel</strong>, a 27-year-old trans woman murdered in Kavar, Fars province, June 2025. Each point on this map documents a case of transfemicide or violence against trans and queer individuals in Iran. We honor their memory and work to shed light on systemic violence.
       </p>
-    </div>
-  </section>
+      <p>
+        This map is an ongoing effort, continuously updated as new cases are verified according to strict privacy ethics.
+      </p>
+    </section>
 
-  <!-- About section -->
-  <section id="about">
-    <h2>About Project Sogand</h2>
-    <p>
-      This project was created to honor the memory of <strong>Sogand Pakdel</strong>, a 27-year-old trans woman 
-      who was murdered by her uncle in Kavar, Fars province, in June 2025. Her death represents the ongoing 
-      violence faced by transgender and queer individuals in Iran.
-    </p>
-    <p>
-      Each point on this map represents a documented case of a transfemicide or a murder of our trans and queer siblings. 
-      Behind every marker is a person who deserved to live freely and safely. We document these cases 
-      to honor their memory and shed light on the systematic violence faced by LGBTQI+ individuals in Iran.
-    </p>
-    <p>
-      This is an ongoing project. We continuously research and verify cases to ensure accuracy while 
-      respecting the privacy and dignity of victims and their families.
-    </p>
-  </section>
-
-  <!-- Submission form -->
-  <section id="submit">
-    <h2>Contribute Information</h2>
-    <p>Help us document cases and share resources. All submissions are reviewed before publication.</p>
-    
-    <form action="https://formspree.io/f/myzpjdaj" method="POST">
-      <label>
-        Your name (optional)
-        <input type="text" name="name" placeholder="Anonymous submissions are welcome">
-      </label>
-
-      <label>
-        Email for follow-up (optional)
-        <input type="email" name="email" placeholder="your@email.com">
-      </label>
-
-      <label>
-        Type of submission
-        <select name="submission_type">
-          <option value="new_case">New case/incident</option>
-          <option value="news_article">News article or report</option>
-          <option value="correction">Data correction</option>
-          <option value="memory">Personal memory/tribute</option>
-          <option value="resource">Resource or support info</option>
-        </select>
-      </label>
-
-      <label>
-        Details, links, or description <span class="req">*</span>
-        <textarea name="message" required placeholder="Please provide as much detail as possible, including sources and dates. For new cases, please include: victim's name (if public), date of incident, location, circumstances, and reliable news sources or documentation."></textarea>
-      </label>
-
-      <button type="submit">Submit</button>
-    </form>
-
-    <div class="privacy-note">
-      <p><strong>Privacy & Safety:</strong> Your email is never displayed publicly. We verify all information before publication and respect victim privacy. We follow ethical guidelines for documenting sensitive cases.</p>
-    </div>
-  </section>
-
-  <!-- Resources section -->
-  <section id="resources">
-    <h2>Support Resources</h2>
-    <div class="resources-grid">
-      <div class="resource-card">
-        <h3>6Rang Iranian LGBTQI Organization</h3>
-        <p>Supporting LGBTQI+ rights in Iran and documenting violations</p>
-        <a href="https://6rang.org/" target="_blank" rel="noopener">Visit website →</a>
+    <section class="map-container">
+      <h2>Interactive Map of Reported Cases</h2>
+      <!-- uMap embed START -->
+      <iframe
+        width="100%"
+        height="500"
+        frameborder="0"
+        allowfullscreen
+        allow="geolocation"
+        src="https://umap.openstreetmap.fr/en/map/sogand_1281537?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"
+        style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
+      ></iframe>
+      <div class="map-link">
+        <a href="https://umap.openstreetmap.fr/en/map/sogand_1281537?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true" target="_blank">
+          See full screen
+        </a>
       </div>
-      <div class="resource-card">
-        <h3>Hengaw Organization</h3>
-        <p>Human rights organization documenting violations in Iranian Kurdistan</p>
-        <a href="https://hengaw.net/" target="_blank" rel="noopener">Visit website →</a>
-      </div>
-      <div class="resource-card">
-        <h3>Amnesty International</h3>
-        <p>Reports on LGBTQI+ rights and human rights violations in Iran</p>
-        <a href="https://www.amnesty.org/" target="_blank" rel="noopener">Visit website →</a>
-      </div>
-      <div class="resource-card">
-        <h3>OutRight Action International</h3>
-        <p>Global LGBTIQ human rights organization</p>
-        <a href="https://outrightinternational.org/" target="_blank" rel="noopener">Visit website →</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Data and methodology section -->
-  <section id="methodology">
-    <h2>Data & Methodology</h2>
-    <p>
-      Our dataset is compiled through systematic research of news reports, human rights organizations, 
-      and verified community sources. Each case requires verification from at least two independent sources 
-      before inclusion.
-    </p>
-    <p>
-      <strong>Data Sources Include:</strong>
-    </p>
-    <ul>
-      <li>Verified news reports from Persian and international media</li>
-      <li>Human rights organizations' documentation (Hengaw, 6Rang, Amnesty International)</li>
-      <li>Court records and official reports (when available)</li>
-      <li>Community-verified testimonies</li>
-    </ul>
-    <p>
-      <strong>Privacy Protection:</strong> We round geographical coordinates to protect surviving family members 
-      and respect victim privacy. Names are only included when they have been made public through official 
-      channels or with family consent.
-    </p>
-  </section>
-</main>
+    <section>
+      <h2>Contribute Information</h2>
+      <form action="https://formspree.io/f/myzpjdaj" method="POST">
+        <label>
+          Your email:
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Your message:
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+      <div class="privacy-note">
+        <strong>Privacy &amp; Safety:</strong> Your email is never displayed publicly. We verify all submitted information before publication and respect victim privacy.
+      </div>
+    </section>
 
-<footer>
-  <nav>
-    <a href="#top">Back to top</a> |
-    <a href="#about">About</a> |
-    <a href="#submit">Contribute</a> |
-    <a href="#methodology">Methodology</a> |
-    <a href="https://github.com/YOUR-USERNAME/iran-transfemicide" target="_blank" rel="noopener">Data repository</a>
-  </nav>
-  <p>&copy; 2025 Project Sogand. Built to remember and honor trans lives. <br>
-     In memory of Sogand Pakdel and all our siblings who deserved to live freely.</p>
-</footer>
+    <section>
+      <h2>Support Resources</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <h3>6Rang Iranian LGBTQI Organization</h3>
+          <a href="https://6rang.org/" target="_blank">Visit website →</a>
+        </div>
+        <div class="resource-card">
+          <h3>Hengaw Organization</h3>
+          <a href="https://hengaw.net/en/" target="_blank">Visit website →</a>
+        </div>
+        <div class="resource-card">
+          <h3>Amnesty International</h3>
+          <a href="https://www.amnesty.org/en/location/middle-east-and-north-africa/iran/report-iran/" target="_blank">Visit website →</a>
+        </div>
+        <div class="resource-card">
+          <h3>OutRight Action International</h3>
+          <a href="https://outrightinternational.org/" target="_blank">Visit website →</a>
+        </div>
+      </div>
+    </section>
 
+    <section>
+      <h2>Data &amp; Methodology</h2>
+      <p>
+        Our dataset is compiled from verified news reports, human rights organizations, court records, and community testimony. Each documented case requires confirmation from at least two independent sources. Coordinates are rounded and names included only with official consent for privacy.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Project Sogand. All rights reserved.
+    <nav>
+      <a href="#map">Map</a>
+      <a href="#contribute">Contribute</a>
+      <a href="#resources">Resources</a>
+      <a href="#methodology">Methodology</a>
+    </nav>
+  </footer>
 </body>
 </html>
