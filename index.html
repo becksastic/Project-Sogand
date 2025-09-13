@@ -9,170 +9,147 @@
     body {
       background-color: #181b20;
       color: #f4f2f5;
-      font-family: system-ui, sans-serif;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       margin: 0; padding: 0;
+      line-height: 1.55;
     }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 16px;
-    }
+    .container { max-width: 880px; margin: 0 auto; padding: 0 16px; }
     header {
-      background: #232532;
-      padding: 22px 0 14px 0;
-      border-bottom: 1px solid #292a32;
+      background: #232532; padding: 22px 0 14px 0; border-bottom: 1px solid #292a32;
     }
-    header h1 {
-      margin: 0; font-size: 2.1em; letter-spacing: 0.5px;
+    header h1 { margin: 0; font-size: 2.05em; letter-spacing: 0.4px; }
+    .top-actions { margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #1e1f2a; border: 1px solid #3a3d4d; color: #9fd7ff;
+      padding: 7px 10px; border-radius: 999px; font-weight: 600; font-size: 0.92em; text-decoration: none;
     }
-    .memorial-photo {
-      display: flex; align-items: flex-start; gap: 13px; margin-top: 15px;
-    }
+    .chip:hover { border-color: #4cc9f0; text-decoration: none; }
+    .memorial-photo { display: flex; align-items: flex-start; gap: 13px; margin-top: 14px; }
     .memorial-photo img {
       border-radius: 12px; width: 75px; height: 75px; object-fit: cover;
-      border: 1.5px solid #3e4050; box-shadow: 0 4px 18px rgba(0,0,0,.28);
-      background: #171519;
+      border: 1.5px solid #3e4050; box-shadow: 0 4px 18px rgba(0,0,0,.28); background: #171519;
     }
-    .photo-caption {
-      font-size: 1em; color: #d792b7; margin-left: 0; margin-top: 4px;
-    }
+    .photo-caption { font-size: 0.98em; color: #d792b7; margin: 2px 0 0 0; }
+    .tagline { color: #adb2be; margin: 8px 0 0 0; }
     section {
-      background: #232532;
-      margin: 26px 0;
-      border-radius: 12px;
-      box-shadow: 0 5px 12px rgba(0,0,0,0.14);
-      padding: 22px 20px 24px 20px;
-      border: 1px solid #292a32;
+      background: #232532; margin: 26px 0; border-radius: 12px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.14); padding: 22px 20px 24px 20px; border: 1px solid #292a32;
     }
-    h2 {
-      margin-top: 0;
-      font-size: 1.25em;
-      color: #4cc9f0;
-      font-weight: 700;
-      letter-spacing: 0.2px;
-    }
-    ul { margin-left: 24px; }
-    .muted { color: #adb2be; font-size: 0.98em; }
+    h2 { margin-top: 0; font-size: 1.22em; color: #4cc9f0; font-weight: 700; letter-spacing: 0.2px; }
+    h3 { margin: 16px 0 8px 0; font-size: 1.05em; color: #9ad8ff; }
+    .muted { color: #adb2be; }
+    ul { margin: 8px 0 0 22px; }
     label { display: block; margin: 14px 0 4px 0; }
     input, textarea {
-      width: 100%;
-      padding: 7px 9px;
-      border-radius: 6px;
-      border: 1px solid #423e63;
-      background: #161621; color: #fff; margin-top: 3px;
-      font-size: 1em;
+      width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid #423e63;
+      background: #161621; color: #fff; margin-top: 4px; font-size: 1em;
     }
     input[type=submit] {
-      background: #4cc9f0;
-      color: #181b20;
-      border: none;
-      font-weight: 700;
-      padding: 12px 18px;
-      letter-spacing: 0.09px;
-      font-size: 1.08em;
-      border-radius: 8px;
-      margin-top: 12px;
-      cursor: pointer;
+      background: #4cc9f0; color: #181b20; border: none; font-weight: 700;
+      padding: 12px 18px; font-size: 1.05em; border-radius: 8px; margin-top: 12px; cursor: pointer;
       box-shadow: 0 1px 4px 0 #18284744;
     }
     .map-container {
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px #2222;
-      margin-bottom: 8px;
-      background: #111116;
-      border: 1px solid #414a58;
+      border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px #2222; margin-bottom: 8px;
+      background: #111116; border: 1px solid #414a58;
     }
-    .fullscreen-link {
-      color: #4cc9f0;
-      margin-top: 0.5em;
-      display: inline-block;
-    }
+    .fullscreen-link { color: #4cc9f0; margin-top: 0.5em; display: inline-block; }
     .fullscreen-link:hover { text-decoration: underline; }
-    .github-link {
-      color: #f25f5c;
-      font-weight: 600;
-      text-decoration: none;
-      margin-left: 8px;
-    }
-    .github-link:hover { text-decoration: underline; }
-    .country-tip {
-      font-size: 0.98em; color: #adb2be; margin-bottom: 3px;
-    }
+    .country-tip { font-size: 0.98em; color: #adb2be; margin-bottom: 6px; }
+    .credits-list { margin: 6px 0 0 20px; }
     footer {
-      font-size: 0.96em;
-      padding: 36px 10px 41px 10px;
-      color: #adb2be;
-      background: #232532;
-      text-align: center;
-      border-top: 1px solid #292a32;
+      font-size: 0.95em; padding: 30px 10px 40px 10px; color: #adb2be;
+      background: #232532; text-align: center; border-top: 1px solid #292a32;
     }
-    @media (max-width: 600px) {
-      .container { padding: 0 5px; }
-      section { padding: 13px 7px 16px 7px; }
-      .memorial-photo img { width: 53px; height: 53px;}
+    .sr-only {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    @media (max-width: 640px) {
+      .container { padding: 0 8px; }
+      section { padding: 14px 10px 16px 10px; }
+      .memorial-photo img { width: 56px; height: 56px; }
     }
   </style>
 </head>
 <body>
   <header id="top">
     <div class="container">
-      <h1>Project Sogand <a class="github-link" href="https://github.com/becksastic/Project-Sogand" target="_blank" rel="noopener">GitHub</a></h1>
+      <h1>Project Sogand</h1>
+      <div class="top-actions">
+        <a class="chip" href="https://github.com/becksastic/Project-Sogand" target="_blank" rel="noopener" aria-label="View project on GitHub">GitHub</a>
+        <a class="chip" href="#contribute" aria-label="Contribute information">Contribute</a>
+        <a class="chip" href="#founder" aria-label="Learn about the founder">Founder</a>
+      </div>
+
+      <!-- Sogand's memorial photo & preserved caption -->
       <div class="memorial-photo">
         <img src="sogand.jpeg" alt="Sogand Pakdel - In loving memory" loading="lazy">
         <p class="photo-caption">
-          Sogand Pakdel (1998–2025). In memory and solidarity.
+          Sogand Pakdel (1998–2025)<br>
+          <em>"Forever in our hearts, her courage lights our path"</em>
         </p>
       </div>
-      <div class="muted" style="margin-top:8px;">
-        Documenting transfemicide and anti-LGBTQ+ violence in Iran.
-      </div>
+      <p class="tagline">
+        A living memorial to <strong>Sogand Pakdel</strong> and all of our queer &amp; trans Iranian siblings.
+      </p>
     </div>
   </header>
+
   <main>
     <div class="container">
 
-      <section id="map">
-        <h2>Interactive Map of Reported Cases</h2>
-        <div class="country-tip">
-          View encompasses all of Iran with major provinces visible. For best context at country scale, zoom setting is 5.
-        </div>
-        <div class="map-container">
-          <!-- Change zoom to #5/32.5/53.3 for broader Iran view -->
+      <section id="map" aria-labelledby="map-title">
+        <h2 id="map-title">Interactive Map of Reported Cases</h2>
+        <p class="country-tip">
+          View shows most of Iran for context; use +/− to explore regions, or open full screen to scroll and search.
+        </p>
+        <div class="map-container" role="region" aria-label="Project Sogand map">
+          <!-- uMap embed centered on Iran with a wider view (zoom 4) -->
           <iframe
+            title="Project Sogand – Interactive Map"
             width="100%"
-            height="410px"
+            height="460px"
             frameborder="0"
             allowfullscreen
             allow="geolocation"
-            src="//umap.openstreetmap.fr/en/map/sogand_1281537?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#5/32.5/53.3">
+            src="//umap.openstreetmap.fr/en/map/sogand_1281537?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#4/32.5/53.3">
           </iframe>
         </div>
-        <a class="fullscreen-link"
-          target="_blank" rel="noopener"
-          href="//umap.openstreetmap.fr/en/map/sogand_1281537?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#5/32.5/53.3">
+        <a class="fullscreen-link" target="_blank" rel="noopener"
+           href="//umap.openstreetmap.fr/en/map/sogand_1281537?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true#4/32.5/53.3">
           See full screen
         </a>
+        <noscript><p class="muted">JavaScript is disabled. Use “See full screen” to open the map.</p></noscript>
       </section>
 
-      <section id="about">
-        <h2>About Project Sogand</h2>
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About Project Sogand</h2>
         <p>
-          This project was created to honor the memory of <strong>Sogand Pakdel</strong>, a 27-year-old trans woman who was murdered by her uncle in Kavar, Fars province, in June 2025. Her death represents the ongoing violence faced by transgender and queer individuals in Iran.
+          This project was created to honor the memory of <strong>Sogand Pakdel</strong>, a 27-year-old trans woman who was murdered by her uncle in Kavar, Fars province, in June 2025; her death represents the ongoing violence faced by transgender and queer individuals in Iran.
         </p>
         <p>
-          Each point on this map represents a documented case of a transfemicide or a murder of our trans and queer siblings. Behind every marker is a person who deserved to live freely and safely. We document these cases to honor their memory and shed light on the systematic violence faced by LGBTQI+ individuals in Iran.
+          Each point on this map represents a documented case of a transfemicide or a murder of our trans and queer siblings; we document these cases to honor their memory and shed light on systematic violence.
         </p>
         <p>
-          This is an ongoing project. We continuously research and verify cases to ensure accuracy while respecting the privacy and dignity of victims and their families.
+          This is an ongoing project; we continuously research and verify cases to ensure accuracy while respecting the privacy and dignity of victims and their families.
         </p>
       </section>
 
-      <section id="contribute">
-        <h2>Contribute Information</h2>
+      <section id="founder" aria-labelledby="founder-title">
+        <h2 id="founder-title">Founder</h2>
         <p>
-          Help us document cases and share resources. All submissions are reviewed before publication.
+          Project Sogand was founded by <a href="https://beccasanaeikia.weebly.com" target="_blank" rel="noopener">Rebecca (“Becca”) Sanaeikia</a>, a social philosopher working at the intersection of bioethics, data practices, and trans studies.
         </p>
+        <p class="muted">
+          The project invites collaboration from researchers, community advocates, and technologists committed to ethical documentation and safety-centered data practices.
+        </p>
+      </section>
+
+      <section id="contribute" aria-labelledby="contribute-title">
+        <h2 id="contribute-title">Contribute Information</h2>
+        <p>Help us document cases and share resources; all submissions are reviewed before publication.</p>
         <form action="https://formspree.io/f/myzpjdaj" method="POST">
           <label>
             Your name (optional)
@@ -189,12 +166,12 @@
           <input type="submit" value="Send">
         </form>
         <p class="muted" style="margin-top:9px;">
-          <strong>Privacy &amp; Safety:</strong> Your email is never displayed publicly. We verify all information before publication and respect victim privacy. We follow ethical guidelines for documenting sensitive cases.
+          <strong>Privacy &amp; Safety:</strong> Your email is never displayed publicly; we verify all information before publication and follow ethical guidelines to respect victim privacy.
         </p>
       </section>
 
-      <section id="resources">
-        <h2>Support Resources</h2>
+      <section id="resources" aria-labelledby="resources-title">
+        <h2 id="resources-title">Support Resources</h2>
         <ul>
           <li>
             <strong>6Rang Iranian LGBTQI Organization:</strong>
@@ -219,10 +196,28 @@
         </ul>
       </section>
 
-      <section id="data">
-        <h2>Data &amp; Methodology</h2>
+      <section id="credits" aria-labelledby="credits-title">
+        <h2 id="credits-title">Credits &amp; Thanks</h2>
         <p>
-          Our dataset is compiled through systematic research of news reports, human rights organizations, and verified community sources. Each case requires verification from at least two independent sources before inclusion.
+          With gratitude to <a href="https://datoscontrafeminicidio.net/en/home/" target="_blank" rel="noopener">Data Against Feminicide</a> for building an international community of practice and co-designing tools that support ethical documentation of gender-related killings.
+        </p>
+        <ul class="credits-list">
+          <li>
+            Data Against Feminicide — project overview and community aims
+          </li>
+          <li>
+            D+F Lab @ MIT, ILDA, and Feminicidio Uruguay — leadership and collaboration
+          </li>
+          <li>
+            DUSP MIT page — background on goals and participatory approach
+          </li>
+        </ul>
+      </section>
+
+      <section id="data" aria-labelledby="data-title">
+        <h2 id="data-title">Data &amp; Methodology</h2>
+        <p>
+          Our dataset is compiled through systematic research of news reports, human rights organizations, and verified community sources; each case requires verification from at least two independent sources before inclusion.
         </p>
         <p><strong>Data Sources Include:</strong></p>
         <ul>
@@ -232,18 +227,25 @@
           <li>Community-verified testimonies</li>
         </ul>
         <p class="muted">
-          <strong>Privacy Protection:</strong>
-          We round geographical coordinates to protect surviving family members and respect victim privacy. Names are only included when they have been made public through official channels or with family consent.
+          <strong>Privacy Protection:</strong> We round geographical coordinates to protect surviving family members and respect victim privacy; names are only included when made public through official channels or with family consent.
+        </p>
+      </section>
+
+      <section id="open-collab" aria-labelledby="open-collab-title">
+        <h2 id="open-collab-title">Open Collaboration</h2>
+        <p>
+          Explore code, open issues, and contribute on GitHub:
+          <a href="https://github.com/becksastic/Project-Sogand" target="_blank" rel="noopener">becksastic/Project-Sogand</a>
+        </p>
+        <p class="muted">
+          For data ethics guidance and research context, see international efforts networking feminist data activists around femicide documentation.
         </p>
       </section>
 
     </div>
   </main>
+
   <footer>
     <div class="container">
-      Project Sogand — In memory and solidarity.<br>
-      <a class="github-link" href="https://github.com/becksastic/Project-Sogand" target="_blank" rel="noopener">View project on GitHub</a>
-    </div>
-  </footer>
-</body>
-</html>
+      Project Sogand — In memory and solidarity. •
+      <a href="https://github.com/becksastic/Project-Sogand" target="_blank" rel="noopener">GitHub</a> •
